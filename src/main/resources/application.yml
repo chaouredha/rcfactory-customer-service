@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: CUSTOMER-SERVICE
+  h2:
+    console:
+      enabled: true
+  cloud:
+    discovery:
+      enabled: false
+  datasource:
+    url: jdbc:h2:mem:customer-db
+
