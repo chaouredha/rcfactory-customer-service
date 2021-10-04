@@ -1,4 +1,4 @@
-package org.openlab.openlabcustomerservice.exceptions.dto;
+package org.rcfactory.customerservice.exceptions.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

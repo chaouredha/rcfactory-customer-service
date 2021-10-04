@@ -1,4 +1,4 @@
-package org.openlab.openlabcustomerservice.services;
+package org.rcfactory.customerservice.services;
 
 import static java.lang.String.format;
 import static java.util.stream.Collectors.toList;
@@ -8,12 +8,12 @@ import java.util.Optional;
 
 import javax.transaction.Transactional;
 
-import org.openlab.openlabcustomerservice.controllers.dto.CustomerRequestDTO;
-import org.openlab.openlabcustomerservice.controllers.dto.CustomerResponseDTO;
-import org.openlab.openlabcustomerservice.exceptions.CustomerNotFountException;
-import org.openlab.openlabcustomerservice.exceptions.CustomerServiceException;
-import org.openlab.openlabcustomerservice.mappers.CustomerMapper;
-import org.openlab.openlabcustomerservice.repositories.CustomerRepository;
+import org.rcfactory.customerservice.controllers.dto.CustomerRequestDTO;
+import org.rcfactory.customerservice.controllers.dto.CustomerResponseDTO;
+import org.rcfactory.customerservice.exceptions.CustomerNotFountException;
+import org.rcfactory.customerservice.exceptions.CustomerServiceException;
+import org.rcfactory.customerservice.mappers.CustomerMapper;
+import org.rcfactory.customerservice.repositories.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 @Service

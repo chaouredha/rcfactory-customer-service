@@ -1,10 +1,10 @@
-package org.openlab.openlabcustomerservice;
+package org.rcfactory.customerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OpenlabCustomerServiceApplicationTests {
+class CustomerServiceApplicationTests {
 
     @Test
     void contextLoads() {

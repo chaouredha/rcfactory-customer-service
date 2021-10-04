@@ -1,4 +1,4 @@
-package org.openlab.openlabcustomerservice.domain;
+package org.rcfactory.customerservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

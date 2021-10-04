@@ -1,12 +1,12 @@
-package org.openlab.openlabcustomerservice.controllers;
+package org.rcfactory.customerservice.controllers;
 
 import static org.springframework.http.HttpStatus.CREATED;
 
 import java.util.List;
 
-import org.openlab.openlabcustomerservice.controllers.dto.CustomerRequestDTO;
-import org.openlab.openlabcustomerservice.controllers.dto.CustomerResponseDTO;
-import org.openlab.openlabcustomerservice.services.CustomerService;
+import org.rcfactory.customerservice.controllers.dto.CustomerRequestDTO;
+import org.rcfactory.customerservice.controllers.dto.CustomerResponseDTO;
+import org.rcfactory.customerservice.services.CustomerService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

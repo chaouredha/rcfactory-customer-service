@@ -1,4 +1,4 @@
-package org.openlab.openlabcustomerservice.entities;
+package org.rcfactory.customerservice.entities;
 
 import static javax.persistence.GenerationType.IDENTITY;
 

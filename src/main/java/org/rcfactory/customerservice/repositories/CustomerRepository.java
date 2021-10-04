@@ -1,6 +1,6 @@
-package org.openlab.openlabcustomerservice.repositories;
+package org.rcfactory.customerservice.repositories;
 
-import org.openlab.openlabcustomerservice.entities.Customer;
+import org.rcfactory.customerservice.entities.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

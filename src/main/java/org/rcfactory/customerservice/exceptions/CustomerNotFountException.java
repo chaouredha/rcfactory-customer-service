@@ -1,4 +1,4 @@
-package org.openlab.openlabcustomerservice.exceptions;
+package org.rcfactory.customerservice.exceptions;
 
 public class CustomerNotFountException extends RuntimeException{
     public CustomerNotFountException(String message) {
