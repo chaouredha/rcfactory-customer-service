@@ -3,6 +3,9 @@ package org.rcfactory.customerservice.services;
 import static java.lang.String.format;
 import static java.util.stream.Collectors.toList;
 
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.UnknownHostException;
 import java.util.List;
 import java.util.Optional;
 
@@ -46,6 +49,14 @@ public class CustomerService {
     public CustomerResponseDTO customer(Long id) {
         return customerRepository.findById(id)
                 .map(customerMapper::customerToCustomerResponseDTO)
-                .orElseThrow(() -> new CustomerNotFountException(format("L'id %s non trouvé", id)));
+                .orElseThrow(() -> {
+                    try {
+                        return new CustomerNotFountException(
+                                format("L'id %s non trouvé sur l'instance %s : et par le thread %s", id, InetAddress.getLocalHost().getHostAddress(), Thread.currentThread()));
+                    } catch (UnknownHostException e) {
+                        e.printStackTrace();
+                    }
+                    return null;
+                });
     }
 }
